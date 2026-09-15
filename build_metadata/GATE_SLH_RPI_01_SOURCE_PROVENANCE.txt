@@ -1,0 +1,78 @@
+======================================================
+SLH-RPI-01 SOURCE PROVENANCE
+======================================================
+
+------------------------------------------------------
+1. REPOSITORY
+------------------------------------------------------
+PASS: repository exists -- /home/sohaib/PhD_HBS/Objective1/RPI5_SLHDSA/01_source/slhdsa-c
+
+------------------------------------------------------
+2. GIT PROVENANCE
+------------------------------------------------------
+origin = https://github.com/pq-code-package/slhdsa-c.git
+PASS: expected upstream repository
+git_commit = 174c02e42257f95c210963272877c49dbb50070f
+PASS: exact Git commit captured
+working_tree_status = CLEAN
+PASS: working tree clean
+
+------------------------------------------------------
+3. REQUIRED SOURCE FILES
+------------------------------------------------------
+PASS: slh_dsa.c exists
+PASS: slh_dsa.h exists
+PASS: slh_param.h exists
+PASS: slh_sha2.c exists
+PASS: slh_shake.c exists
+PASS: slh_adrs.h exists
+PASS: sha2_256.c exists
+PASS: sha2_512.c exists
+PASS: sha3_api.c exists
+PASS: sha3_f1600.c exists
+PASS: Makefile exists
+PASS: README.md exists
+
+------------------------------------------------------
+4. SOURCE HASHES
+------------------------------------------------------
+slh_dsa.c SHA256 = 29eece765e69d2dab9beb0bd2e515c9b779169ff3155f50c7648a2590bd89ead
+slh_dsa.h SHA256 = aa5eb9234f9dc342d5a41af02a572fd68c4a832b05561cd4c95447a2be5cfe2e
+slh_param.h SHA256 = d848f41c5f5ac2b911d077209da0f9fb313ffcc8865c55b43dd09cdfce009ac7
+slh_sha2.c SHA256 = 075066c5af445933868eeb42120451662aefd696cf5a4c71ce464fe758f07604
+slh_shake.c SHA256 = f2fb7737be95e38d0b69b7ba445d0e90b4b2af3e2cfb65a32b23b140a91ae130
+slh_adrs.h SHA256 = 75a5ed6b5636e013471190efa88ccdd3d39fb2e12fe51e8ba22a4d158980a98c
+sha2_256.c SHA256 = b8636fc6b28327254fb5412c30a992677011d035be4d1bb30a17aeb31d9f73ff
+sha2_512.c SHA256 = 84b914b342a16d07716b1830668e3728892b422fc322f05fadec3993f60f2832
+sha3_api.c SHA256 = bd045033968d8701307d9f5a7db862085937532517372a5dbea5c49f6462c0bd
+sha3_f1600.c SHA256 = d4c5a46b79ed2c5477ccc129f5f41b57a327dd46b80f76aeaf1e476b725171a5
+Makefile SHA256 = f8240d03d9d5b67568b77e695bfa7f4026b613808e7f93e3363215ef99287702
+README.md SHA256 = f9ae727759b047a3d1505448642a90a194e0573d659ff91f860bf3f6c64a0310
+
+------------------------------------------------------
+5. PARAMETER-SET SUPPORT
+------------------------------------------------------
+PASS: SLH-DSA-SHA2-128s declared
+PASS: SLH-DSA-SHA2-128f declared
+PASS: SLH-DSA-SHA2-192s declared
+PASS: SLH-DSA-SHA2-192f declared
+PASS: SLH-DSA-SHA2-256s declared
+PASS: SLH-DSA-SHA2-256f declared
+PASS: SLH-DSA-SHAKE-128s declared
+PASS: SLH-DSA-SHAKE-128f declared
+PASS: SLH-DSA-SHAKE-192s declared
+PASS: SLH-DSA-SHAKE-192f declared
+PASS: SLH-DSA-SHAKE-256s declared
+PASS: SLH-DSA-SHAKE-256f declared
+Supported FIPS 205 parameter sets = 12/12
+
+------------------------------------------------------
+6. BUILD TOOLCHAIN
+------------------------------------------------------
+gcc = gcc (Debian 14.2.0-19) 14.2.0
+make = GNU Make 4.4.1
+
+------------------------------------------------------
+7. FINAL RESULT
+------------------------------------------------------
+FINAL SLH-RPI-01 SOURCE PROVENANCE PASS = true

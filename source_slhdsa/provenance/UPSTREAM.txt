@@ -1,0 +1,19 @@
+Upstream project:
+pq-code-package/slhdsa-c
+
+Upstream repository:
+https://github.com/pq-code-package/slhdsa-c.git
+
+Frozen commit:
+174c02e42257f95c210963272877c49dbb50070f
+
+Commit author:
+Douglas Stebila <dstebila@users.noreply.github.com>
+
+Commit date:
+2026-08-06T15:07:26+01:00
+
+This upstream implementation is not original work by Sohaib Rana.
+It is included here only as a frozen reproducibility snapshot for the
+Raspberry Pi 5 benchmark study. Original copyright and license terms
+remain applicable.

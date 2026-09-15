@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this benchmark package, please cite the associated manuscript and archived release."
+title: "Raspberry Pi 5 Hash-Based Signature Benchmark"
+type: software
+authors:
+  - family-names: "Rana"
+    given-names: "Sohaib"
+    affiliation: "Universiti Sains Malaysia"
+repository-code: "https://github.com/sohaibrana1/rpi5-hbs-benchmark"
+abstract: >-
+  Reproducibility package for an empirical Raspberry Pi 5 study of
+  stateful XMSS/XMSS-MT and standardized stateless SLH-DSA. The package
+  includes frozen source provenance, benchmark metadata, publication-level
+  analysis artifacts, validation manifests, and figures.
+keywords:
+  - post-quantum cryptography
+  - hash-based signatures
+  - XMSS
+  - XMSS-MT
+  - SLH-DSA
+  - FIPS 205
+  - Raspberry Pi 5
+  - benchmarking

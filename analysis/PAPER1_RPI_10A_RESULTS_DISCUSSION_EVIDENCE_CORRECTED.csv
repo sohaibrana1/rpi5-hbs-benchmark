@@ -1,0 +1,13 @@
+evidence_id,section,claim_type,subject,metric,value,unit,interpretation,claim_scope
+E01,STATEFUL_REF_FAST,EXTREMUM,XMSSMT20_4_W256,ref_fast_sign_speedup,32.110091618,x,Minimum directly calculated REF-to-FAST signing speedup across 12 matched stateful configurations.,DESCRIPTIVE_RPI5
+E02,STATEFUL_REF_FAST,EXTREMUM,XMSS16_W4,ref_fast_sign_speedup,29717.377577972,x,Maximum directly calculated REF-to-FAST signing speedup across 12 matched stateful configurations.,DESCRIPTIVE_RPI5
+E03,STATEFUL_PERFORMANCE,EXTREMUM,XMSS10 FAST w=4,sign_mean_ms,2.948730720,ms,Fastest signing configuration within the 24-cell stateful parameter-sensitivity block.,DESCRIPTIVE_RPI5
+E04,STATEFUL_SIZE,EXTREMUM,XMSS10 REF w=256,signature_bytes,1444,bytes,Smallest signature in the measured stateful parameter space.,DESCRIPTIVE_RPI5
+E05,STATEFUL_STATE_STORAGE,EXTREMUM,XMSSMT20_4 FAST w=4,serialized_secret_key_bytes,17278,bytes,Largest serialized FAST/BDS secret-key state in the measured stateful block.,DESCRIPTIVE_RPI5
+E06,SLH_PROFILE_TRADEOFF,RANGE,SLH-DSA f versus s,f_profile_signing_speedup,9.729458358-22.603831999,x,Directly calculated f-profile signing acceleration range relative to matched s profiles.,DESCRIPTIVE_RPI5
+E07,SLH_PROFILE_TRADEOFF,RANGE,SLH-DSA f versus s,f_profile_signature_expansion,1.673469388-2.198224852,x,Directly calculated signature expansion range for matched f profiles relative to s profiles.,DESCRIPTIVE_RPI5
+E08,SLH_HASH_COMPARISON,RANGE,SHAKE versus SHA2,shake_sha2_sign_latency_ratio,1.683420240-1.731891144,x,Directly calculated matched SHAKE-to-SHA2 signing latency ratio on the Raspberry Pi 5.,DESCRIPTIVE_RPI5
+E09,SLH_PERFORMANCE,EXTREMUM,SLH-DSA-SHA2-128f,sign_mean_ms,31.574738590,ms,Fastest measured signing configuration in the standardized SLH-DSA block.,DESCRIPTIVE_RPI5
+E10,SLH_SIZE,EXTREMUM,SLH-DSA-SHA2-128s,signature_bytes,7856,bytes,Smallest standardized SLH-DSA signature in the evaluated block.,DESCRIPTIVE_RPI5
+E11,CROSS_FAMILY_DEPLOYMENT,EXTREMUM,XMSS10 FAST,sign_mean_ms,2.948730720,ms,Lowest observed signing mean in the combined deployment dataset; not a security-equivalent superiority claim.,DESCRIPTIVE_CROSS_FAMILY
+E12,CROSS_FAMILY_DEPLOYMENT,EXTREMUM,XMSS10 REF,signature_bytes,1444,bytes,Smallest observed signature in the combined deployment dataset; security and state distinctions remain part of interpretation.,DESCRIPTIVE_CROSS_FAMILY

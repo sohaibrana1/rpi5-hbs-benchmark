@@ -1,0 +1,132 @@
+======================================================
+SLH-RPI-37 MASTER SLH-DSA FREEZE MANIFEST
+======================================================
+
+------------------------------------------------------
+1. SOURCE PROVENANCE
+------------------------------------------------------
+PASS: Git HEAD readable -- 174c02e42257f95c210963272877c49dbb50070f
+GIT_COMMIT = 174c02e42257f95c210963272877c49dbb50070f
+PASS: Git commit exact -- expected=174c02e42257f95c210963272877c49dbb50070f actual=174c02e42257f95c210963272877c49dbb50070f
+PASS: working tree clean -- CLEAN
+
+------------------------------------------------------
+2. AUTHORITATIVE BINARIES
+------------------------------------------------------
+PASS: operation binary exists -- /home/sohaib/PhD_HBS/Objective1/RPI5_SLHDSA/03_authoritative_binaries/slh_rpi07_generic_final_benchmark
+OPERATION_BINARY_SHA256 = 3d73a4d97a81d265017934a6b7d1f7888f393188596f12f58fc647909a44ae75
+PASS: operation binary SHA256 exact -- expected=3d73a4d97a81d265017934a6b7d1f7888f393188596f12f58fc647909a44ae75 actual=3d73a4d97a81d265017934a6b7d1f7888f393188596f12f58fc647909a44ae75
+PASS: component binary exists -- /home/sohaib/PhD_HBS/Objective1/RPI5_SLHDSA/03_authoritative_binaries/slh_rpi22_generic_component_benchmark
+COMPONENT_BINARY_SHA256 = 4c2dd6e2e705a40a91abba39d32a3e91d44083b2cdc5b0f0104d0b860a6bdd2a
+PASS: component binary SHA256 exact -- expected=4c2dd6e2e705a40a91abba39d32a3e91d44083b2cdc5b0f0104d0b860a6bdd2a actual=4c2dd6e2e705a40a91abba39d32a3e91d44083b2cdc5b0f0104d0b860a6bdd2a
+
+------------------------------------------------------
+3. FROZEN SUMMARY ARTIFACTS
+------------------------------------------------------
+PASS: operation summary exists -- /home/sohaib/PhD_HBS/Objective1/RPI5_SLHDSA/06_analysis/SLH_RPI_19_ALL12_AUTHORITATIVE_OPERATION_SUMMARY.csv
+OPERATION_SUMMARY_SHA256 = 967ba13630706b1f80b7e8febe956fc20361f3b4d8e0e8166e58012503f6538f
+PASS: operation summary SHA256 exact -- expected=967ba13630706b1f80b7e8febe956fc20361f3b4d8e0e8166e58012503f6538f actual=967ba13630706b1f80b7e8febe956fc20361f3b4d8e0e8166e58012503f6538f
+PASS: component summary exists -- /home/sohaib/PhD_HBS/Objective1/RPI5_SLHDSA/06_analysis/SLH_RPI_35_ALL12_AUTHORITATIVE_COMPONENT_SUMMARY.csv
+COMPONENT_SUMMARY_SHA256 = c4b02ff4106681e0117c35e58da4dc87b5d745c8a2f84dd5ab2f379a4b87720c
+PASS: component summary SHA256 exact -- expected=c4b02ff4106681e0117c35e58da4dc87b5d745c8a2f84dd5ab2f379a4b87720c actual=c4b02ff4106681e0117c35e58da4dc87b5d745c8a2f84dd5ab2f379a4b87720c
+PASS: operation-component crosscheck exists -- /home/sohaib/PhD_HBS/Objective1/RPI5_SLHDSA/06_analysis/SLH_RPI_36_OPERATION_COMPONENT_CROSSCHECK.csv
+OPERATION_COMPONENT_CROSSCHECK_SHA256 = c208d08b2dfbe980e39a0c0714642d86f2e5300044f1a7a704a5226e67843294
+PASS: operation-component crosscheck SHA256 exact -- expected=c208d08b2dfbe980e39a0c0714642d86f2e5300044f1a7a704a5226e67843294 actual=c208d08b2dfbe980e39a0c0714642d86f2e5300044f1a7a704a5226e67843294
+
+------------------------------------------------------
+4. AUTHORITATIVE DATASET COUNTS
+------------------------------------------------------
+operation_csv_count = 13
+component_csv_count = 12
+FAIL: 12 authoritative operation CSVs present -- observed=13
+PASS: 12 authoritative component CSVs present -- observed=12
+
+------------------------------------------------------
+5. CHECK GLOBAL SUMMARY COUNTS
+------------------------------------------------------
+PASS: operation summary = 12 rows -- observed=12
+PASS: component summary = 12 rows -- observed=12
+PASS: crosscheck summary = 12 rows -- observed=12
+operation_total_rows = 2520
+operation_keygen_rows = 120
+operation_sign_rows = 1200
+operation_verify_rows = 1200
+operation_verification_passes = 1200
+component_total_rows = 1200
+component_verification_passes = 1200
+PASS: operation total = 2520 rows
+PASS: operation keygen total = 120
+PASS: operation sign total = 1200
+PASS: operation verify total = 1200
+PASS: operation verification = 1200/1200 PASS
+PASS: component total = 1200 rows
+PASS: component verification = 1200/1200 PASS
+
+------------------------------------------------------
+6. OPERATION-COMPONENT CONSISTENCY
+------------------------------------------------------
+MAX_ABSOLUTE_OPERATION_COMPONENT_DELTA_PERCENT = 0.615585196
+MEAN_ABSOLUTE_OPERATION_COMPONENT_DELTA_PERCENT = 0.117037459
+PASS: all operation-component deltas <= 5% -- max_observed=0.615585196%
+
+------------------------------------------------------
+7. OUTPUT SAFETY
+------------------------------------------------------
+PASS: master manifest absent -- /home/sohaib/PhD_HBS/Objective1/RPI5_SLHDSA/08_manifest/SLH_RPI_37_MASTER_FREEZE_MANIFEST.csv
+PASS: validation record absent -- /home/sohaib/PhD_HBS/Objective1/RPI5_SLHDSA/07_validation/GATE_SLH_RPI_37_MASTER_FREEZE_MANIFEST.txt
+
+------------------------------------------------------
+8. CREATE MASTER MANIFEST
+------------------------------------------------------
+PASS: validation artifact exists: GATE_SLH_RPI_19_ALL12_OPERATION_FREEZE.txt
+PASS: validation artifact exists: GATE_SLH_RPI_22_GENERIC_COMPONENT_BUILD.txt
+PASS: validation artifact exists: GATE_SLH_RPI_23_COMPONENT_CELL01_SHA2_128S.txt
+PASS: validation artifact exists: GATE_SLH_RPI_24_COMPONENT_CELL02_SHA2_128F.txt
+PASS: validation artifact exists: GATE_SLH_RPI_25_COMPONENT_CELL03_SHA2_192S.txt
+PASS: validation artifact exists: GATE_SLH_RPI_26_COMPONENT_CELL04_SHA2_192F.txt
+PASS: validation artifact exists: GATE_SLH_RPI_27_COMPONENT_CELL05_SHA2_256S.txt
+PASS: validation artifact exists: GATE_SLH_RPI_28_COMPONENT_CELL06_SHA2_256F.txt
+PASS: validation artifact exists: GATE_SLH_RPI_29_COMPONENT_CELL07_SHAKE_128S.txt
+PASS: validation artifact exists: GATE_SLH_RPI_30_COMPONENT_CELL08_SHAKE_128F.txt
+PASS: validation artifact exists: GATE_SLH_RPI_31_COMPONENT_CELL09_SHAKE_192S.txt
+PASS: validation artifact exists: GATE_SLH_RPI_32_COMPONENT_CELL10_SHAKE_192F.txt
+PASS: validation artifact exists: GATE_SLH_RPI_33_COMPONENT_CELL11_SHAKE_256S.txt
+PASS: validation artifact exists: GATE_SLH_RPI_34_COMPONENT_CELL12_SHAKE_256F.txt
+PASS: validation artifact exists: GATE_SLH_RPI_35_ALL12_COMPONENT_FREEZE.txt
+PASS: validation artifact exists: GATE_SLH_RPI_36_OPERATION_COMPONENT_CROSSCHECK.txt
+
+------------------------------------------------------
+9. FINAL READINESS SUMMARY
+------------------------------------------------------
+standardized_parameter_sets = 12
+hash_families = SHA2,SHAKE
+security_categories = 128,192,256
+profiles = s,f
+operation_protocol_per_set = 10 keygen + 100 sign + 100 verify
+component_protocol_per_set = 100 instrumented sign rows
+operation_block_rows = 2520
+component_block_rows = 1200
+operation_verification = 1200/1200 PASS
+component_verification = 1200/1200 PASS
+component_level = LEVEL_2_NON_OVERLAPPING
+component_accounting = PRF_MSG + H_MSG + FORS_PARENT + HT_PARENT + residual
+git_commit = 174c02e42257f95c210963272877c49dbb50070f
+
+------------------------------------------------------
+10. IMMUTABILITY
+------------------------------------------------------
+PASS: operation binary unchanged
+PASS: component binary unchanged
+PASS: operation summary unchanged
+PASS: component summary unchanged
+PASS: crosscheck unchanged
+PASS: baseline source tree still clean -- CLEAN
+No authoritative operation CSV was modified.
+No authoritative component CSV was modified.
+No authoritative binary was rebuilt.
+No benchmark was executed.
+
+------------------------------------------------------
+11. FINAL RESULT
+------------------------------------------------------
+FINAL SLH-RPI-37 MASTER SLH-DSA FREEZE PASS = false
