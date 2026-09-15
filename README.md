@@ -115,9 +115,15 @@ See `LICENSES.md`.
 
 Citation metadata are provided in `CITATION.cff`.
 
-A permanent archival DOI will be added after the reproducibility release
-is deposited in Zenodo.
+Archived release:
+
+- Version: `v1.0.0`
+- DOI: `10.5281/zenodo.22775812`
+- DOI URL: https://doi.org/10.5281/zenodo.22775812
 
 ## Data archive
 
-The permanent Zenodo DOI will be added after archival publication.
+The frozen `v1.0.0` reproducibility release is permanently archived in
+Zenodo:
+
+https://doi.org/10.5281/zenodo.22775812
