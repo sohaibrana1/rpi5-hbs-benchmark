@@ -1,0 +1,147 @@
+PAPER 1 BDS TRANSITION EXTENSION — PUBLICATION RUN PLAN
+
+Freeze date:
+2026-09-16
+
+Classification:
+SEPARATE BDS SEQUENTIAL-INDEX TRANSITION EXTENSION
+
+This extension does NOT replace or alter the frozen Paper 1 baseline.
+
+FINAL EXECUTABLE
+----------------
+Path:
+02_build/bin/bds_transition_benchmark_postfix
+
+SHA256:
+eaad5ddb3791d203f48aac84d0f09a47e783d014df1e80475064934f04af2d41
+
+FINAL HARNESS
+-------------
+Path:
+02_build/source_stateful_w16_working/test/bds_transition_benchmark.c
+
+SHA256:
+1a3ab1221223969607ea21953977d8b15d61fb010071c8c171454a9a2b5db391
+
+IMPLEMENTATION
+--------------
+FAST / BDS traversal
+SHA2
+WOTS+ w=16
+
+Compiler:
+gcc (Debian 14.2.0-19) 14.2.0
+
+Compiler flags:
+-std=gnu11 -O3 -Wall -Wextra -Wpedantic -DNDEBUG
+
+MEASUREMENT RULES
+-----------------
+1. One independent warm-up key per run.
+2. 100 warm-up signatures.
+3. Warm-up signatures are excluded from publication data.
+4. A fresh independent measurement key is then generated.
+5. Measurement key must begin at index 0.
+6. The same measurement key is advanced contiguously through the
+   complete configured run.
+7. No index skipping.
+8. No key reset during a run.
+9. Signing latency uses CLOCK_MONOTONIC_RAW.
+10. Only the signing call is inside sign_ns timing.
+11. Verification occurs outside sign_ns timing.
+12. Every measured signature must verify.
+13. Verification failure invalidates the run.
+14. Every row records index-before and index-after.
+15. Message length is fixed at 32 bytes.
+16. CPU affinity for publication runs: CPU 3.
+17. CPU governor requirement: performance.
+18. Failed or interrupted runs are preserved, never silently deleted or
+    pooled with valid data.
+
+REPLICATION
+-----------
+Three independent measurement keys per configuration:
+
+PUB_R1
+PUB_R2
+PUB_R3
+
+PARAMETER SETS AND RANGES
+-------------------------
+XMSS-SHA2_10_256
+1023 signatures/key
+indices 0..1022
+complete implementation-usable sequence
+
+XMSS-SHA2_16_256
+65535 signatures/key
+indices 0..65534
+complete implementation-usable sequence
+
+XMSSMT-SHA2_20/2_256
+4096 signatures/key
+indices 0..4095
+captures layer-transition boundaries at:
+1024
+2048
+3072
+
+XMSSMT-SHA2_20/4_256
+1024 signatures/key
+indices 0..1023
+captures repeated lower-subtree transitions every 32 signatures
+
+TOTAL PUBLICATION RUNS
+----------------------
+12
+
+TOTAL MEASURED SIGNATURES
+-------------------------
+215034
+
+TOTAL MEASURED VERIFICATIONS
+----------------------------
+215034
+
+ANALYSIS INTENT
+---------------
+For each parameter set:
+- sign latency versus sequential index
+- mean
+- median / P50
+- P90
+- P95
+- P99
+- maximum
+- standard deviation
+- coefficient of variation
+- replicate-level consistency
+- transition-window behavior
+- boundary-local latency
+- index-dependent periodicity
+
+Percentile analysis is admissible for this extension because signatures
+are measured over explicitly contiguous index sequences.
+
+THERMAL / EXECUTION CONTROL
+---------------------------
+Each publication run must record:
+- CPU affinity
+- governor
+- start temperature
+- end temperature
+- throttling status
+- executable SHA256
+- harness SHA256
+- run start timestamp
+- run end timestamp
+- process return code
+- CSV SHA256
+
+Publication runs must not use H7/H7D/H7F/H8 validation timing values.
+
+DURABLE STATE COMMIT
+--------------------
+Filesystem/NVRAM durable state-commit latency is NOT measured by this
+extension and must not be represented as part of sign_ns.

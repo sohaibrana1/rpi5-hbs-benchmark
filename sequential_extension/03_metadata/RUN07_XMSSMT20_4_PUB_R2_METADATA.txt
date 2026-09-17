@@ -1,0 +1,163 @@
+PAPER 1 BDS TRANSITION EXTENSION — PUBLICATION RUN 07
+
+Classification:
+PUBLICATION DATA
+
+Run order:
+7
+
+Parameter set:
+XMSSMT-SHA2_20/4_256
+
+Key replicate:
+PUB_R2
+
+Measured signatures:
+1024
+
+Measured indices:
+0..1023
+
+Final secret-key index:
+1024
+
+Verification:
+1024/1024 PASS
+
+Warm-up:
+100 signatures using a separate warm-up key
+
+Measurement key:
+Fresh independent key beginning at index 0
+
+Replicate relationship:
+Independent measurement key from PUB_R1
+
+Per-layer tree height:
+5
+
+Full hypertree height:
+20
+
+Layers:
+4
+
+WOTS parameter:
+16
+
+Lower-subtree transition period:
+32 signatures
+
+Internal 32-signature boundaries captured:
+31
+
+CPU affinity:
+CPU 3
+
+CPU governor:
+performance
+
+CPU frequency before run:
+2400000
+
+CPU maximum frequency:
+2400000
+
+Start timestamp:
+2026-09-17T01:00:46+08:00
+
+End timestamp:
+2026-09-17T01:01:01+08:00
+
+Wall-clock duration:
+15.000 seconds
+
+Start CPU temperature:
+54.550 C
+
+End CPU temperature:
+59.500 C
+
+Start throttling:
+throttled=0x0
+
+End throttling:
+throttled=0x0
+
+Executable:
+02_build/bin/bds_transition_benchmark_postfix
+
+Executable SHA256:
+eaad5ddb3791d203f48aac84d0f09a47e783d014df1e80475064934f04af2d41
+
+Harness:
+02_build/source_stateful_w16_working/test/bds_transition_benchmark.c
+
+Harness SHA256:
+1a3ab1221223969607ea21953977d8b15d61fb010071c8c171454a9a2b5db391
+
+Frozen run matrix SHA256:
+cdba1b9bedb92ddd3c6c120e5bf33cc485c3b24a1f703e6a017cac880eb767cd
+
+Frozen study plan SHA256:
+1aed05a8847cbbb4018affefd234c1cee47699aac7dd585fe2cfa031223cdf14
+
+Previous Run 01 SHA256:
+77a72ec591b56d663c2ad285b1631a5c0e9f178a3069e70b2e9d8922479ed25d
+
+Previous Run 02 SHA256:
+b761242659d3b3763fa16e8af8543294597d77bc14d17a5329eb63bb3a52c007
+
+Previous Run 03 SHA256:
+7d809491348ddf3ccb44d190446963c1cf24b635d57852f167297892ff521300
+
+Previous Run 04 SHA256:
+35d386f700ea1024cbc111539f22279fa332b854d0b974b488e615ff0ca4494a
+
+Previous Run 05 SHA256:
+92d3dc7d6579e5380b357f95caef039a1843dfe90fc5451126fbc25b4441b401
+
+Previous Run 06 SHA256:
+9c06f6aff0953dd583c31cf2424e8fbc21f78719888588a09a39c419051ab490
+
+Raw CSV:
+03_raw_operations/RUN07_XMSSMT20_4_PUB_R2.csv
+
+Raw CSV SHA256:
+093ff32253efb0dc0e0ab732ac3a36fb12fc0a0dd94902050480feb491ab49fb
+
+Raw CSV size:
+84048 bytes
+
+Run log:
+09_logs/RUN07_XMSSMT20_4_PUB_R2.log
+
+Run log SHA256:
+0163d00ee0293cf1dc8a19558a4eb6c541eb857766319e45e16bd66631347ef0
+
+Process return code:
+0
+
+Compiler:
+gcc (Debian 14.2.0-19) 14.2.0
+
+Compiler flags:
+-std=gnu11 -O3 -Wall -Wextra -Wpedantic -DNDEBUG
+
+Timing clock:
+CLOCK_MONOTONIC_RAW
+
+Signature bytes:
+9251
+
+Serialized secret-key bytes:
+10942
+
+Validation status:
+PASS
+
+Important:
+This is the second independent measurement-key replicate for
+XMSSMT-SHA2_20/4_256.
+
+Validation runs must not be pooled with this publication dataset.

@@ -127,3 +127,36 @@ The frozen `v1.0.0` reproducibility release is permanently archived in
 Zenodo:
 
 https://doi.org/10.5281/zenodo.22775812
+
+## Sequential-index extension release
+
+Version `v1.1.0` adds the sequential-index BDS traversal extension for
+the four standardized `w=16` FAST configurations:
+
+- XMSS-SHA2_10_256
+- XMSS-SHA2_16_256
+- XMSSMT-SHA2_20/2_256
+- XMSSMT-SHA2_20/4_256
+
+Three independent measurement keys were used for each configuration,
+giving 12 publication runs. Signature indices advance contiguously from
+index 0 without reset; warm-up uses separate disposable key material.
+
+The extension release includes:
+
+- 12 authoritative per-signature CSV datasets;
+- frozen source provenance and the sequential benchmark harness;
+- run metadata and publication run matrix;
+- descriptive, boundary-window, and index-aligned analysis datasets;
+- five publication figures;
+- validation and SHA-256 integrity records.
+
+Release package:
+
+`releases/v1.1.0/PAPER1_SEQUENTIAL_EXTENSION_RELEASE_v1.1.0.tar.gz`
+
+Archive SHA-256:
+
+`1c3d7e9b4095e8c9ca603afb7225881b160187008aec25537fd92441fad9df6a`
+
+A Zenodo DOI for `v1.1.0` will be added after archival publication.

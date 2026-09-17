@@ -1,0 +1,151 @@
+PAPER 1 BDS TRANSITION EXTENSION — PUBLICATION RUN 12
+
+Classification:
+PUBLICATION DATA
+
+Run order:
+12
+
+Parameter set:
+XMSSMT-SHA2_20/4_256
+
+Key replicate:
+PUB_R3
+
+Measured signatures:
+1024
+
+Measured indices:
+0..1023
+
+Final secret-key index:
+1024
+
+Verification:
+1024/1024 PASS
+
+Warm-up:
+100 signatures using a separate warm-up key
+
+Measurement key:
+Fresh independent key beginning at index 0
+
+Replicate relationship:
+Third independent measurement key for XMSSMT-SHA2_20/4_256
+
+Per-layer tree height:
+5
+
+Full hypertree height:
+20
+
+Layers:
+4
+
+WOTS parameter:
+16
+
+Lower-subtree transition period:
+32 signatures
+
+Internal 32-signature boundaries captured:
+31
+
+CPU affinity:
+CPU 3
+
+CPU governor:
+performance
+
+CPU frequency before run:
+2400000
+
+CPU maximum frequency:
+2400000
+
+Start timestamp:
+2026-09-17T01:51:37+08:00
+
+End timestamp:
+2026-09-17T01:51:53+08:00
+
+Wall-clock duration:
+16.000 seconds
+
+Start CPU temperature:
+56.750 C
+
+End CPU temperature:
+57.850 C
+
+Start throttling:
+throttled=0x0
+
+End throttling:
+throttled=0x0
+
+Executable:
+02_build/bin/bds_transition_benchmark_postfix
+
+Executable SHA256:
+eaad5ddb3791d203f48aac84d0f09a47e783d014df1e80475064934f04af2d41
+
+Harness:
+02_build/source_stateful_w16_working/test/bds_transition_benchmark.c
+
+Harness SHA256:
+1a3ab1221223969607ea21953977d8b15d61fb010071c8c171454a9a2b5db391
+
+Frozen run matrix SHA256:
+cdba1b9bedb92ddd3c6c120e5bf33cc485c3b24a1f703e6a017cac880eb767cd
+
+Frozen study plan SHA256:
+1aed05a8847cbbb4018affefd234c1cee47699aac7dd585fe2cfa031223cdf14
+
+Raw CSV:
+03_raw_operations/RUN12_XMSSMT20_4_PUB_R3.csv
+
+Raw CSV SHA256:
+d7dce42b49d1284932bad1abb20873de1b4b1b87c9762bde022cc589959d84bd
+
+Raw CSV size:
+84048 bytes
+
+Run log:
+09_logs/RUN12_XMSSMT20_4_PUB_R3.log
+
+Run log SHA256:
+70a46307af9ce6e2ebb73a2b67ac439d6e1416e554abd243662e3023b98c48a4
+
+Process return code:
+0
+
+Compiler:
+gcc (Debian 14.2.0-19) 14.2.0
+
+Compiler flags:
+-std=gnu11 -O3 -Wall -Wextra -Wpedantic -DNDEBUG
+
+Timing clock:
+CLOCK_MONOTONIC_RAW
+
+Signature bytes:
+9251
+
+Serialized secret-key bytes:
+10942
+
+Validation status:
+PASS
+
+Replicate completion:
+XMSSMT-SHA2_20/4_256 = 3/3 publication keys complete
+
+Publication matrix completion:
+12/12 runs complete
+
+Total publication measurements:
+215034
+
+Important:
+Validation runs must not be pooled with this publication dataset.

@@ -1,0 +1,145 @@
+PAPER 1 BDS TRANSITION EXTENSION — PUBLICATION RUN 11
+
+Classification:
+PUBLICATION DATA
+
+Run order:
+11
+
+Parameter set:
+XMSS-SHA2_16_256
+
+Key replicate:
+PUB_R3
+
+Measured signatures:
+65535
+
+Measured indices:
+0..65534
+
+Sequence coverage:
+COMPLETE IMPLEMENTATION-USABLE LIFETIME
+
+Final secret-key index:
+65535
+
+Verification:
+65535/65535 PASS
+
+Warm-up:
+100 signatures using a separate warm-up key
+
+Measurement key:
+Fresh independent key beginning at index 0
+
+Replicate relationship:
+Third independent measurement key for XMSS-SHA2_16_256
+
+Tree height:
+16
+
+Full height:
+16
+
+Layers:
+1
+
+WOTS parameter:
+16
+
+CPU affinity:
+CPU 3
+
+CPU governor:
+performance
+
+CPU frequency before run:
+2400000
+
+CPU maximum frequency:
+2400000
+
+Start timestamp:
+2026-09-17T01:19:38+08:00
+
+End timestamp:
+2026-09-17T01:46:49+08:00
+
+Wall-clock duration:
+1631.000 seconds
+
+Start CPU temperature:
+57.850 C
+
+End CPU temperature:
+57.300 C
+
+Start throttling:
+throttled=0x0
+
+End throttling:
+throttled=0x0
+
+Executable:
+02_build/bin/bds_transition_benchmark_postfix
+
+Executable SHA256:
+eaad5ddb3791d203f48aac84d0f09a47e783d014df1e80475064934f04af2d41
+
+Harness:
+02_build/source_stateful_w16_working/test/bds_transition_benchmark.c
+
+Harness SHA256:
+1a3ab1221223969607ea21953977d8b15d61fb010071c8c171454a9a2b5db391
+
+Frozen run matrix SHA256:
+cdba1b9bedb92ddd3c6c120e5bf33cc485c3b24a1f703e6a017cac880eb767cd
+
+Frozen study plan SHA256:
+1aed05a8847cbbb4018affefd234c1cee47699aac7dd585fe2cfa031223cdf14
+
+Raw CSV:
+03_raw_operations/RUN11_XMSS16_PUB_R3.csv
+
+Raw CSV SHA256:
+c60fbb636fc19da3cdf9c861ff30faaa68448218b0136b3bcef92d4256c2e2bd
+
+Raw CSV size:
+5524046 bytes
+
+Run log:
+09_logs/RUN11_XMSS16_PUB_R3.log
+
+Run log SHA256:
+1c58a6f5a7eeecd435716580a9db15d631abda71fee5d18b8b4981a9ede5e155
+
+Process return code:
+0
+
+Compiler:
+gcc (Debian 14.2.0-19) 14.2.0
+
+Compiler flags:
+-std=gnu11 -O3 -Wall -Wextra -Wpedantic -DNDEBUG
+
+Timing clock:
+CLOCK_MONOTONIC_RAW
+
+Signature bytes:
+2692
+
+Serialized secret-key bytes:
+2097
+
+Validation status:
+PASS
+
+Replicate completion:
+XMSS-SHA2_16_256 = 3/3 publication keys complete
+
+Important:
+The implementation intentionally does not use theoretical index 65535;
+the measured signing indices are therefore 0..65534.
+
+Validation runs must not be pooled with this publication dataset.

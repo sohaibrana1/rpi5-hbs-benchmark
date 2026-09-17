@@ -1,0 +1,147 @@
+PAPER 1 BDS TRANSITION EXTENSION — PUBLICATION RUN 03
+
+Classification:
+PUBLICATION DATA
+
+Run order:
+3
+
+Parameter set:
+XMSSMT-SHA2_20/2_256
+
+Key replicate:
+PUB_R1
+
+Measured signatures:
+4096
+
+Measured indices:
+0..4095
+
+Final secret-key index:
+4096
+
+Verification:
+4096/4096 PASS
+
+Warm-up:
+100 signatures using a separate warm-up key
+
+Measurement key:
+Fresh independent key beginning at index 0
+
+Per-layer tree height:
+10
+
+Full hypertree height:
+20
+
+Layers:
+2
+
+Lower-subtree transition period:
+1024 signatures
+
+Captured intended transition boundaries:
+1024
+2048
+3072
+
+CPU affinity:
+CPU 3
+
+CPU governor:
+performance
+
+CPU frequency before run:
+2400000
+
+CPU maximum frequency:
+2400000
+
+Start timestamp:
+2026-09-16T16:57:11+08:00
+
+End timestamp:
+2026-09-16T16:58:29+08:00
+
+Wall-clock duration:
+78.000 seconds
+
+Start CPU temperature:
+58.400 C
+
+End CPU temperature:
+57.850 C
+
+Start throttling:
+throttled=0x0
+
+End throttling:
+throttled=0x0
+
+Executable:
+02_build/bin/bds_transition_benchmark_postfix
+
+Executable SHA256:
+eaad5ddb3791d203f48aac84d0f09a47e783d014df1e80475064934f04af2d41
+
+Harness:
+02_build/source_stateful_w16_working/test/bds_transition_benchmark.c
+
+Harness SHA256:
+1a3ab1221223969607ea21953977d8b15d61fb010071c8c171454a9a2b5db391
+
+Frozen run matrix SHA256:
+cdba1b9bedb92ddd3c6c120e5bf33cc485c3b24a1f703e6a017cac880eb767cd
+
+Frozen study plan SHA256:
+1aed05a8847cbbb4018affefd234c1cee47699aac7dd585fe2cfa031223cdf14
+
+Previous accepted Run 01 SHA256:
+77a72ec591b56d663c2ad285b1631a5c0e9f178a3069e70b2e9d8922479ed25d
+
+Previous accepted Run 02 SHA256:
+b761242659d3b3763fa16e8af8543294597d77bc14d17a5329eb63bb3a52c007
+
+Raw CSV:
+03_raw_operations/RUN03_XMSSMT20_2_PUB_R1.csv
+
+Raw CSV SHA256:
+7d809491348ddf3ccb44d190446963c1cf24b635d57852f167297892ff521300
+
+Raw CSV size:
+347954 bytes
+
+Run log:
+09_logs/RUN03_XMSSMT20_2_PUB_R1.log
+
+Run log SHA256:
+3dde3c69b4d7463c09bbe096b80be1cb7ca8ce2e637fcac80707e9385bf96a98
+
+Process return code:
+0
+
+Compiler:
+gcc (Debian 14.2.0-19) 14.2.0
+
+Compiler flags:
+-std=gnu11 -O3 -Wall -Wextra -Wpedantic -DNDEBUG
+
+Timing clock:
+CLOCK_MONOTONIC_RAW
+
+Signature bytes:
+4963
+
+Serialized secret-key bytes:
+6002
+
+Validation status:
+PASS
+
+Important:
+This is accepted publication data for the separate BDS sequential-index
+transition extension.
+
+Validation runs must not be pooled with this dataset.

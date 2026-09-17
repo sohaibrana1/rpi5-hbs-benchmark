@@ -1,0 +1,22 @@
+PAPER 1 BDS TRANSITION EXTENSION — SOURCE PROVENANCE
+
+Date: 2026-09-16
+
+Repository: /home/sohaib/PhD_HBS/Objective1/PAPER1_PUBLIC_REPOSITORY
+Source subtree: /home/sohaib/PhD_HBS/Objective1/PAPER1_PUBLIC_REPOSITORY/source_stateful/w16
+Git top-level: /home/sohaib/PhD_HBS/Objective1/PAPER1_PUBLIC_REPOSITORY
+HEAD: df72046fd2da4466e68cd2723089e8ab85fc2ace
+Branch: main
+
+Repository status:
+CLEAN
+
+w16 subtree status:
+CLEAN
+
+Critical file SHA256:
+4b39ff2ffffefa0772717671ad286770c983004820c00654c57c5543c078dae2  /home/sohaib/PhD_HBS/Objective1/PAPER1_PUBLIC_REPOSITORY/source_stateful/w16/xmss_core_fast.c
+972c057bca02b30eb3a4c81cbc0439b4a6f560becc9d3dc657ef29c2c5d018bb  /home/sohaib/PhD_HBS/Objective1/PAPER1_PUBLIC_REPOSITORY/source_stateful/w16/params.c
+93ef36d2e49c39ec0e5007db908561bc4e2764158089bca4d8eddc3eb746f42b  /home/sohaib/PhD_HBS/Objective1/PAPER1_PUBLIC_REPOSITORY/source_stateful/w16/params.h
+4eef4263e9ad47f517a955bc38abc154194f6a63fadd36979e336111598a460c  /home/sohaib/PhD_HBS/Objective1/PAPER1_PUBLIC_REPOSITORY/source_stateful/w16/Makefile
+a7ef1abbd1f40ea61423d106bfc398710af4adba3320efadc62f078a0142363f  /home/sohaib/PhD_HBS/Objective1/PAPER1_PUBLIC_REPOSITORY/source_stateful/w16/test/xmss_max_signatures.c

@@ -1,0 +1,45 @@
+PAPER 1 BDS TRANSITION EXTENSION — FROZEN SOURCE RECORD
+
+Date:
+2026-09-16
+
+Repository:
+/home/sohaib/PhD_HBS/Objective1/PAPER1_PUBLIC_REPOSITORY
+
+Release tag:
+v1.0.0
+
+Release commit:
+f82abb9318abe5391ba4c310cd6a7800420d6fc2
+
+Current verified main HEAD:
+df72046fd2da4466e68cd2723089e8ab85fc2ace
+
+Source subtree:
+source_stateful/w16
+
+Release-to-current subtree comparison:
+IDENTICAL
+
+Frozen archive:
+01_source_frozen/source_stateful_w16_v1.0.0_f82abb9.tar.gz
+
+Frozen archive SHA256:
+c83b7b1be3dd1f9946a1e135c0fdf55e6e1ac90c1eb31156b138fd590bbdb6d3
+
+Extracted frozen source:
+01_source_frozen/source_stateful_w16_v1.0.0
+
+Source manifest:
+01_source_frozen/source_stateful_w16_v1.0.0_SHA256.csv
+
+Source manifest SHA256:
+2ffbbe0c353127fd47c9af901e4dbae1c4bb410c3f0be84d7ae95a44001c8bdc
+
+Rule:
+The frozen source snapshot is immutable provenance material.
+Future transition-harness edits must NOT be made inside this frozen copy.
+A separate build/working copy must be created later.
+
+No build was performed.
+No benchmark was run.
