@@ -159,4 +159,4 @@ Archive SHA-256:
 
 `1c3d7e9b4095e8c9ca603afb7225881b160187008aec25537fd92441fad9df6a`
 
-A Zenodo DOI for `v1.1.0` will be added after archival publication.
+The `v1.1.0` release is archived in Zenodo at DOI `10.5281/zenodo.22810804`.
